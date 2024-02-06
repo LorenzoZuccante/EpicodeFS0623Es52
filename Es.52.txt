@@ -1,0 +1,36 @@
+es 1
+SELECT *    
+  FROM [northwind].[dbo].[Products]
+  
+es 2
+SELECT *
+      
+  FROM [northwind].[dbo].[Products]
+  where UnitsInStock >= 40
+
+es 3
+SELECT *
+  FROM [northwind].[dbo].[Employees]
+  where City = 'London'
+
+es 4
+SELECT *
+  FROM [northwind].[dbo].[Orders]
+  order by Freight DESC
+es 5
+SELECT *
+  FROM [northwind].[dbo].[Orders]
+  where Freight between 90 and 200
+es 6
+SELECT *
+      
+  FROM [northwind].[dbo].[Products]
+  where CategoryID = 1
+es 7
+SELECT *
+  FROM [northwind].[dbo].[Order Details]
+  where Discount > 0
+es 8
+SELECT *
+  FROM [northwind].[dbo].[Orders]
+  where CustomerID = 'BOTTM' and Freight > 50
